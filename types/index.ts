@@ -24,6 +24,12 @@ export interface CarCardProps {
   car: CarProps;
 }
 
+export interface CarDetailsProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  car: CarProps;
+}
+
 // API Response Types
 export interface CarProps {
   city_mpg: number;

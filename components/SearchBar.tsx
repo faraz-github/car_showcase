@@ -33,7 +33,7 @@ const SearchBar = (props: Props) => {
       alert("Please fill in search");
     }
 
-    updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase())
+    updateSearchParams(model.toLowerCase(), manufacturer.toLowerCase());
   };
 
   const updateSearchParams = (model: string, manufacturer: string) => {
@@ -55,7 +55,7 @@ const SearchBar = (props: Props) => {
       window.location.pathname
     }?${searchParams.toString()}`;
 
-    router.push(newPathName);
+    router.push(newPathName, { scroll: false }); // scroll: false option is a fix for scroll to top
   };
 
   return (

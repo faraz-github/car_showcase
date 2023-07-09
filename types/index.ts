@@ -36,6 +36,11 @@ export interface CarDetailsProps {
   car: CarProps;
 }
 
+export interface ShowMoreProps {
+  pageNumber: number;
+  isNext: boolean;
+}
+
 // Utility Types
 export interface FilterProps {
   manufacturer: string;
